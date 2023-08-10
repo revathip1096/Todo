@@ -34,7 +34,7 @@ export default function Home() {
       <HStack m='4'></HStack>
       <HStack><Input placeholder="Enter your Todo" value={todo} onChange={(e)=>settodo(e.target.value)} />
 
-      <Button onClick={addtodo} colorScheme='blue'>{!editing ? "Add" : "Update"}</Button >
+      <Button onClick={() => addtodo()} colorScheme='blue'>{!editing ? "Add" : "Update"}</Button >
       </HStack>
       <Center height='30px'>
       <Divider orientation='vertical' />
